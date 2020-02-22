@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>异常捕获 · GitBook</title>
+        <title>异常捕获错误上报 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -56,6 +56,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="埋点.html" />
     
     
     <link rel="prev" href="启动图配置.html" />
@@ -186,7 +188,20 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2" data-path="启动图配置.html">
+        <li class="chapter " data-level="3.1.2" data-path="logo.html">
+            
+                <a href="logo.html">
+            
+                    
+                    logo图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="启动图配置.html">
             
                 <a href="启动图配置.html">
             
@@ -199,12 +214,155 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.1.3" data-path="异常捕获.html">
+        <li class="chapter active" data-level="3.1.4" data-path="异常捕获.html">
             
                 <a href="异常捕获.html">
             
                     
-                    异常捕获
+                    异常捕获错误上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="埋点.html">
+            
+                <a href="埋点.html">
+            
+                    
+                    埋点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="热更新.html">
+            
+                <a href="热更新.html">
+            
+                    
+                    热更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="推送.html">
+            
+                <a href="推送.html">
+            
+                    
+                    推送
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    开发调试
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../调试/android模拟器调试/readme.html">
+            
+                <a href="../调试/android模拟器调试/readme.html">
+            
+                    
+                    android模拟器下
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../ios模拟器调试/readme.md">
+            
+                <span>
+            
+                    
+                    ios模拟器下
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    打包
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../打包/打包apk/readme.html">
+            
+                <a href="../打包/打包apk/readme.html">
+            
+                    
+                    android
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../打包/打包ipa/readme.html">
+            
+                <a href="../打包/打包ipa/readme.html">
+            
+                    
+                    ios
             
                 </a>
             
@@ -247,7 +405,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >异常捕获</a>
+        <a href=".." >异常捕获错误上报</a>
     </h1>
 </div>
 
@@ -262,7 +420,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="node">node</h1>
+                                <h2 id="&#x5F02;&#x5E38;&#x6355;&#x83B7;">&#x5F02;&#x5E38;&#x6355;&#x83B7;</h2>
+<h3 id="1-ui&#x5C42;--componentdidcatch-&#x5904;&#x7406;render&#x5F02;&#x5E38;--react-&#x9519;&#x8BEF;&#x8FB9;&#x754C;">1. ui&#x5C42;  componentDidCatch &#x5904;&#x7406;render&#x5F02;&#x5E38;  react &#x9519;&#x8BEF;&#x8FB9;&#x754C;</h3>
+<h3 id="2-js&#x5C42;&#xFF0C;globalerrorutilssetglobalhandler---rn-&#x5185;&#x90E8;&#x5F02;&#x5E38;&#x6355;&#x83B7;">2. js&#x5C42;&#xFF0C;global.ErrorUtils.setGlobalHandler   rn &#x5185;&#x90E8;&#x5F02;&#x5E38;&#x6355;&#x83B7;</h3>
+<h3 id="3-&#x5E95;&#x5C42;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;bugly--&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;">3. &#x5E95;&#x5C42;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;bugly  &#x6216;&#x8005;&#x5176;&#x4ED6;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;</h3>
+<h2 id="error&#x4E0A;&#x62A5;">error&#x4E0A;&#x62A5;</h2>
+<p><code>!__DEV__</code> &#x628A;&#x9519;&#x8BEF;&#x4E0A;&#x62A5;</p>
 
                                 
                                 </section>
@@ -290,10 +453,14 @@
 
             
                 
-                <a href="启动图配置.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 启动图">
+                <a href="启动图配置.html" class="navigation navigation-prev " aria-label="Previous page: 启动图">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="埋点.html" class="navigation navigation-next " aria-label="Next page: 埋点">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -302,7 +469,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"异常捕获","level":"3.1.3","depth":2,"previous":{"title":"启动图","level":"3.1.2","depth":2,"path":"基础工程/启动图配置.md","ref":"基础工程/启动图配置.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础工程/异常捕获.md","mtime":"2019-07-02T14:39:49.525Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-02T06:36:26.043Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"异常捕获错误上报","level":"3.1.4","depth":2,"next":{"title":"埋点","level":"3.1.5","depth":2,"path":"基础工程/埋点.md","ref":"基础工程/埋点.md","articles":[]},"previous":{"title":"启动图","level":"3.1.3","depth":2,"path":"基础工程/启动图配置.md","ref":"基础工程/启动图配置.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"基础工程/异常捕获.md","mtime":"2020-02-20T07:27:06.967Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-20T13:23:36.303Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
